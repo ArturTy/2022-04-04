@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Dark: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+.boxed {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menu-bar {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+header ul {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: -5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.cover h1 {
+  /* font-size: 40px; */
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+.cover p {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.cover {
+  display: grid;
+  grid-template-columns:
+  padding: 80px;
+  background-color: var(--Very-Dark-Violet);
+}
+
+
