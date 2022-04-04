@@ -13,57 +13,69 @@
   --grayish-violet: hsl(257, 7%, 63%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
 }
-.boxed {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.menu-bar {
-  display: flex;
-  margin-top: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 15px;
-  justify-content: space-between;
-  font-size: 16px;
+
+h1,
+h2 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
+  text-align: center;
+  line-height: 1;
 }
-header ul {
-  display: flex;
-  gap: 10px;
-}
-
-.button {
-  border: 1px solid black;
-  padding: 5px;
-  margin-top: -5px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-ul {
-  list-style: none;
-}
-.cover h1 {
-  /* font-size: 40px; */
-  color: white;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-}
-.cover p {
-  font-size: 16px;
+p {
   font-family: "Karla", sans-serif;
-  font-weight: 400;
-  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
 }
 
-.cover {
-  display: grid;
-  grid-template-columns:
-  padding: 80px;
-  background-color: var(--Very-Dark-Violet);
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+}
+.text-over-image {
+  margin-top: -100px;
+  position: relative;
+  text-align: center;
 }
 
+.humanizing {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 20px;
+  padding: 0px 30px;
+  padding-bottom: 80px;
+  margin-top: -4px;
+  flex-direction: column;
+  background-color: var(--Dark);
+  color: var(--Very-Light-Gray);
+}
+.humanizing h1 {
+  font-size: 45px;
+}
 
+.humanizing img {
+  align-self: flex-start;
+  margin-left: -30px;
+  /* margin-top: -85px; */
+  /* z-index: 1; */
+}
+.button-white {
+  background-color: transparent;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--Very-Light-Gray);
+  border: 1px solid var(--Very-Light-Gray);
+  width: fit-content;
+  padding: 10px 30px;
+  margin-top: 25px;
+}
+.image-intro-right-mobile {
+  position: absolute;
+  right: 0;
+  margin-top: -153px;
+}
