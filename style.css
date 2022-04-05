@@ -14,13 +14,26 @@
   --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
-h1,
-h2 {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
+  font-size: 45px;
   text-align: center;
   line-height: 1;
 }
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1;
+}
+
 p {
   font-family: "Karla", sans-serif;
   font-size: 16px;
@@ -53,9 +66,9 @@ nav {
   background-color: var(--Dark);
   color: var(--Very-Light-Gray);
 }
-.humanizing h1 {
+/* .humanizing h1 {
   font-size: 45px;
-}
+} */
 
 .humanizing img {
   align-self: flex-start;
@@ -78,4 +91,129 @@ nav {
   position: absolute;
   right: 0;
   margin-top: -153px;
+}
+
+.we-are-different {
+  margin-top: 130px;
+}
+
+.line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+  border-width: 1px solid var(--Very-Light-Gray);
+}
+
+.we-are-different h1 {
+  padding-top: 50px;
+  color: var(--Very-Dark-Violet);
+}
+
+.we-are-different-item-section {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  color: var(--Dark-Grayish-Violet);
+  /* display: flex;
+  flex-direction: column;
+  gap: 50px; */
+}
+
+.we-are-different-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.we-are-different-item h2 {
+  padding: 30px;
+  color: var(--Very-Dark-Violet);
+}
+
+.we-are-different-item {
+  padding: 0 30px;
+}
+
+.find-out-more {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Dark);
+  padding: 80px 30px;
+  margin: 25px;
+}
+
+.find-out-more h1 {
+  position: relative; /*turi buti kad pakisti image po h1 https://www.w3schools.com/css/css_z-index.asp*/
+  color: var(--Very-Light-Gray);
+  font-size: 40px;
+  font-weight: 200;
+  z-index: 2; /* h1 virsuje image */
+}
+
+.find-out-more .button-white {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.find-out-more img {
+  position: absolute;
+  z-index: 1; /* image po apacia h1*/
+  right: 25px;
+  margin-top: -265px;
+}
+
+.social {
+  margin-top: 140px;
+  padding-bottom: 100px;
+  background-color: var(--Very-Light-Gray);
+}
+
+.social-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: -90px;
+  padding-bottom: 40px;
+}
+
+.social-flex ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 90%;
+  text-align: center;
+  border-width: 1px solid var(--Very-Light-Gray);
+}
+
+.flex-navigation-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation-menu ul {
+  text-transform: uppercase;
+  list-style: none;
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Dark);
+  text-align: center;
+  line-height: 2.3;
+}
+
+.navigation-menu-title {
+  color: var(--Dark-Grayish-Violet);
+  padding-top: 20px;
 }
